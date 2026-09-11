@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A photo album featuring temples of The Church of Jesus Christ of Latter-day Saints.">
+    <meta name="author" content="Madelin Hernández">
+    <title>Temple Album</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <span class="site-title">Temple Album</span>
+
+            <button id="menu-button" aria-label="Open navigation menu">
+                ☰
+            </button>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Temple Album</h1>
+
+        <div class="temple-grid">
+            <figure>
+                <img src="images/Temple-guatemala.jpg" alt="Temple">
+                <figcaption>Guatemala City Guatemala Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-saltlake.jpg" alt="Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/temple-roma.jpg" alt="Temple">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/parisfrance_temple.webp" alt="Temple">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/mexicocity_temple.webp" alt="Temple">
+                <figcaption>Mexico City Mexico Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/san_diegocalifornia_temple.webp" alt="Temple">
+                <figcaption>San Diego California Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/washington_dc_temple.webp" alt="Temple">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/madridspain_temple.webp" alt="Temple">
+                <figcaption>Madrid Spain Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/sao_paulobrazil_temple.webp" alt="Temple">
+                <figcaption>São Paulo Brazil Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Madelin Hernández, Guatemala
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

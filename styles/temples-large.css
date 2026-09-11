@@ -1,0 +1,30 @@
+
+@media screen and (min-width: 700px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    figure {
+        transition: transform 0.2s ease;
+    }
+
+    figure:hover {
+        transform: translateY(-4px);
+    }
+}
