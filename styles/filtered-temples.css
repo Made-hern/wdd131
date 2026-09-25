@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: "Montserrat", sans-serif;
+background-color: #f8f5f0;
+color: #292929;
+}
+
+header {
+background-color: #6b2737;
+color: white;
+padding: 1rem;
+}
+
+.header-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.site-title {
+font-family: "Playfair Display", serif;
+font-size: 1.6rem;
+font-weight: 700;
+}
+
+#menu-button {
+background: none;
+border: none;
+color: white;
+font-size: 2rem;
+cursor: pointer;
+}
+
+nav {
+display: none;
+flex-direction: column;
+text-align: center;
+}
+
+nav.open {
+display: flex;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 0.8rem;
+font-weight: 600;
+}
+
+nav a:hover {
+background-color: #d9a441;
+color: #292929;
+}
+
+main {
+max-width: 1100px;
+margin: 0 auto;
+padding: 1.5rem;
+}
+
+h1 {
+text-align: center;
+font-family: "Playfair Display", serif;
+color: #6b2737;
+margin-bottom: 2rem;
+}
+
+.temple-grid {
+display: grid;
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
+
+figure {
+margin: 0;
+background-color: white;
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+figure img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+figcaption {
+text-align: center;
+font-weight: 600;
+font-size: 1.1rem;
+margin-top: 0.8rem;
+}
+
+.temple-info {
+text-align: center;
+margin-top: 0.8rem;
+}
+
+.temple-info p {
+margin: 0.4rem 0;
+font-size: 0.9rem;
+}
+
+.temple-info strong {
+color: #6b2737;
+}
+
+footer {
+background-color: #6b2737;
+color: white;
+text-align: center;
+padding: 1.5rem;
+margin-top: 2rem;
+}
+
+footer p {
+margin: 0.4rem;
+}
