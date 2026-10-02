@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f1f8;
+    color: #252033;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #4b285e;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+label,
+legend {
+    font-weight: bold;
+}
+
+form > label {
+    display: block;
+    margin-top: 1.2rem;
+    margin-bottom: 0.4rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #777;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.6rem 0;
+    font-weight: normal;
+}
+
+.rating {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.rating label {
+    font-size: 1.2rem;
+    color: #4b285e;
+}
+
+.rating input {
+    margin-right: 0.2rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    accent-color: #4b285e;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #4b285e;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #351b43;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #c49ad8;
+    border-color: #4b285e;
+}
+
+.confirmation {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.confirmation h2 {
+    color: #4b285e;
+    font-size: 2rem;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.2rem;
+    background-color: #4b285e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #351b43;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #252033;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.3rem;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        padding: 0;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    .rating {
+        justify-content: space-between;
+    }
+}

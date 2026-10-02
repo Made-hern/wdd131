@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review form for WDD 131">
+    <meta name="author" content="Madelin Hernández">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a product...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <div class="rating">
+                    <label for="rating1">
+                        <input type="radio" id="rating1" name="rating" value="1" required>
+                        ☆
+                    </label>
+
+                    <label for="rating2">
+                        <input type="radio" id="rating2" name="rating" value="2" required>
+                        ☆☆
+                    </label>
+
+                    <label for="rating3">
+                        <input type="radio" id="rating3" name="rating" value="3" required>
+                        ☆☆☆
+                    </label>
+
+                    <label for="rating4">
+                        <input type="radio" id="rating4" name="rating" value="4" required>
+                        ☆☆☆☆
+                    </label>
+
+                    <label for="rating5">
+                        <input type="radio" id="rating5" name="rating" value="5" required>
+                        ☆☆☆☆☆
+                    </label>
+                </div>
+            </fieldset>
+
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+
+                <label for="durability">
+                    <input type="checkbox" id="durability" name="features" value="Durability">
+                    Durability
+                </label>
+
+                <label for="ease">
+                    <input type="checkbox" id="ease" name="features" value="Ease of Use">
+                    Ease of Use
+                </label>
+
+                <label for="performance">
+                    <input type="checkbox" id="performance" name="features" value="Performance">
+                    Performance
+                </label>
+
+                <label for="design">
+                    <input type="checkbox" id="design" name="features" value="Design">
+                    Design
+                </label>
+            </fieldset>
+
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="6"></textarea>
+
+            <label for="userName">Your Name</label>
+            <input type="text" id="userName" name="userName">
+
+            <input type="submit" value="Submit Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Madelin Hernández | Guatemala</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
