@@ -1,218 +1,109 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site plan for Art in Motion, a website exploring the connection between painting and music.">
-    <meta name="author" content="Madelin Hernandez">
-    <title>Art in Motion | Site Plan</title>
-    <link rel="stylesheet" href="styles/siteplan.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art in Motion | Where Art Meets Music</title>
+  <meta name="description" content="Explore the emotional connection between painting, music, color, and sound through artists and interactive experiences.">
+  <meta name="author" content="Madelin Hernández">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+  <script src="scripts/siteplan.js" defer></script>
 </head>
-
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <header>
-        <h1>Art in Motion</h1>
-        <p>Where colors become feelings and music becomes visual.</p>
-    </header>
+  <header class="site-header">
+    <a class="brand" href="siteplan.html">ART <span>IN</span> MOTION</a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="siteplan.html" aria-current="page">Home</a>
+      <a href="artis.html">Artists</a>
+      <a href="explore.html">Explore</a>
+    </nav>
+  </header>
 
-    <main>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">A journey through the senses</p>
+        <h1>Where colors become feelings and <em>music becomes visual.</em></h1>
+        <p class="hero-description">Two forms of art. One universal language. Discover how paintings and melodies can express emotions that words cannot explain.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="explore.html">Explore the connection</a>
+          <a class="text-link" href="artis.html">Meet the artists ↗</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?auto=format&fit=crop&w=1100&q=85" alt="Colorful abstract painting with expressive brushstrokes" width="900" height="1100" fetchpriority="high">
+        <figcaption>Every color has a rhythm. Every melody paints a picture.</figcaption>
+      </figure>
+    </section>
 
-        <section>
-            <h2>1. Site Name</h2>
-            <h3>Art in Motion</h3>
+    <section class="intro section-padding">
+      <p class="eyebrow">Beyond what we see and hear</p>
+      <h2>Art speaks in more than one language.</h2>
+      <p class="section-intro">A painting can sound like a melody. A melody can feel like a color. Although painting and music use different tools, both can take us through emotions, memories, and imagination.</p>
 
-            <p>
-                I chose the name "Art in Motion" because it represents the
-                connection between painting and music. Although these are
-                different forms of art, both can communicate movement,
-                emotions, and experiences.
-            </p>
+      <div class="experience-grid">
+        <article class="experience-card">
+          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=900&q=80" alt="Paintings displayed in an art gallery" width="700" height="500" loading="lazy">
+          <div class="card-copy">
+            <span class="card-number">01 / SEE</span>
+            <h3>The power of color</h3>
+            <p>Colors, shapes, light, and brushstrokes can suggest joy, tension, calm, or longing before we even understand a painting.</p>
+          </div>
+        </article>
+        <article class="experience-card">
+          <img src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?auto=format&fit=crop&w=900&q=80" alt="Piano keys ready for a musical performance" width="700" height="500" loading="lazy">
+          <div class="card-copy">
+            <span class="card-number">02 / HEAR</span>
+            <h3>The feeling of sound</h3>
+            <p>Rhythm, melody, tempo, and harmony shape the atmosphere of a musical piece and influence how we experience it.</p>
+          </div>
+        </article>
+        <article class="experience-card">
+          <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?auto=format&fit=crop&w=900&q=80" alt="Abstract artwork blending colors and shapes" width="700" height="500" loading="lazy">
+          <div class="card-copy">
+            <span class="card-number">03 / FEEL</span>
+            <h3>One emotional language</h3>
+            <p>When we connect what we see with what we hear, a new interpretation emerges—and every person may experience it differently.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <p>
-                The tagline for the website is:
-                <strong>"Where colors become feelings and music becomes visual."</strong>
-            </p>
-        </section>
+    <section class="featured-artist section-padding">
+      <div class="featured-image">
+        <img src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=1000&q=85" alt="Expressive artwork in a gallery" width="900" height="900" loading="lazy">
+      </div>
+      <div class="featured-copy">
+        <p class="eyebrow">Featured inspiration</p>
+        <h2>Vincent van Gogh</h2>
+        <p class="artist-quote">What if a painting could have a soundtrack?</p>
+        <p>Van Gogh's expressive brushstrokes and dramatic colors invite us to imagine movement and sound within a still image. His work offers a starting point for exploring how visual rhythm can remind us of musical rhythm.</p>
+        <a class="button button-outline" href="artis.html">Discover the artists</a>
+      </div>
+    </section>
 
-        <section>
-            <h2>2. Site Purpose</h2>
+    <section class="explore-banner section-padding">
+      <p class="eyebrow">Your senses, your interpretation</p>
+      <h2>What does emotion look like to you?</h2>
+      <p>Explore different moods and discover a painting-and-music pairing inspired by the feeling you choose.</p>
+      <a class="button button-primary" href="explore.html">Start your experience</a>
+    </section>
+  </main>
 
-            <p>
-                The purpose of this website is to explore the relationship
-                between painting and music and how both forms of art can
-                communicate emotions, ideas, and experiences without words.
-            </p>
-
-            <p>
-                The website will provide information about visual art,
-                music, artists, composers, colors, emotions, and the
-                different elements that connect these two art forms.
-            </p>
-
-            <p>
-                The site will also include interactive content that allows
-                visitors to explore connections between paintings, music,
-                and emotions.
-            </p>
-        </section>
-
-        <section>
-            <h2>3. Scenarios</h2>
-
-            <p>
-                The target audience includes people who are interested in
-                art, music, creativity, and emotional expression.
-            </p>
-
-            <ul>
-                <li>
-                    What painting could represent the feeling of listening
-                    to a melancholic piece of music?
-                </li>
-
-                <li>
-                    What kind of music could match the emotions and colors
-                    of Van Gogh's paintings?
-                </li>
-
-                <li>
-                    How can color, rhythm, and movement create similar emotions?
-                </li>
-
-                <li>
-                    What musical piece could represent the feeling of a
-                    particular painting?
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>4. Color Scheme</h2>
-
-            <p>
-                The color palette is inspired by the emotional and artistic
-                atmosphere of galleries, classical art, and music.
-            </p>
-
-            <div class="color-palette">
-
-                <div class="color-box burgundy">
-                    <h3>Deep Burgundy</h3>
-                    <p>#5A2633</p>
-                    <p>Headers, navigation, buttons, and important details.</p>
-                </div>
-
-                <div class="color-box cream">
-                    <h3>Warm Cream</h3>
-                    <p>#F4EBDD</p>
-                    <p>Backgrounds, cards, and main content areas.</p>
-                </div>
-
-                <div class="color-box gold">
-                    <h3>Muted Gold</h3>
-                    <p>#C6A15B</p>
-                    <p>Decorative lines, icons, accents, and highlights.</p>
-                </div>
-
-                <div class="color-box charcoal">
-                    <h3>Charcoal</h3>
-                    <p>#252525</p>
-                    <p>Body text and secondary information.</p>
-                </div>
-
-            </div>
-        </section>
-
-        <section>
-            <h2>5. Typography</h2>
-
-            <div class="font-example">
-                <h3 class="playfair">Playfair Display</h3>
-                <p>
-                    This font will be used for the main title, section
-                    headings, artist names, and important artistic phrases.
-                </p>
-            </div>
-
-            <div class="font-example">
-                <h3 class="lato">Lato</h3>
-                <p>
-                    This font will be used for paragraphs, navigation,
-                    buttons, and general information because it is easy
-                    to read on screens.
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <h2>6. Wireframes</h2>
-
-            <h3>Mobile View</h3>
-
-            <div class="wireframe mobile-wireframe">
-                <div class="wf-header">ART IN MOTION<br>☰</div>
-
-                <div class="wf-hero">
-                    WHERE COLORS<br>
-                    BECOME FEELINGS
-                </div>
-
-                <div class="wf-image">MAIN ART IMAGE</div>
-
-                <div class="wf-content">
-                    PAINTING + MUSIC<br>
-                    = EMOTION
-                </div>
-
-                <div class="wf-card">SEE IT</div>
-                <div class="wf-card">HEAR IT</div>
-                <div class="wf-card">FEEL IT</div>
-
-                <div class="wf-button">EXPLORE</div>
-
-                <div class="wf-footer">FOOTER</div>
-            </div>
-
-            <h3>Desktop View</h3>
-
-            <div class="wireframe desktop-wireframe">
-
-                <div class="wf-header">
-                    ART IN MOTION
-                    <span>HOME &nbsp; ARTISTS &nbsp; EXPLORE</span>
-                </div>
-
-                <div class="wf-hero">
-                    WHERE COLORS BECOME FEELINGS<br>
-                    AND MUSIC BECOMES VISUAL
-                </div>
-
-                <div class="wf-image">LARGE ART IMAGE</div>
-
-                <div class="wf-content">
-                    PAINTING + MUSIC = EMOTION
-                </div>
-
-                <div class="wf-columns">
-                    <div class="wf-card">PAINTING</div>
-                    <div class="wf-card">MUSIC</div>
-                    <div class="wf-card">EMOTION</div>
-                </div>
-
-                <div class="wf-button">EXPLORE THE CONNECTION</div>
-
-                <div class="wf-footer">FOOTER</div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Art in Motion | WDD131 Site Plan</p>
-    </footer>
-
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="siteplan.html">ART <span>IN</span> MOTION</a>
+    <p>Where colors become feelings and music becomes visual.</p>
+    <p class="footer-credit">&copy; <span id="current-year"></span> Art in Motion | Madelin Hernández</p>
+    <p id="last-modified"></p>
+  </footer>
 </body>
 </html>

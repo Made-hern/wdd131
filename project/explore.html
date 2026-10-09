@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the connection between painting, music, colors, and emotions with Art in Motion.">
+    <meta name="author" content="Madelin Hernández">
+    <title>Explore | Art in Motion</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="siteplan.html" aria-label="Art in Motion home">
+                ART <span>IN MOTION</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open navigation menu"
+                aria-expanded="false" aria-controls="primary-nav">
+                ☰
+            </button>
+
+            <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+                <a href="siteplan.html">Home</a>
+                <a href="artis.html">Artists</a>
+                <a href="explore.html" class="active" aria-current="page">Explore</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero explore-hero">
+            <div class="page-hero-content">
+                <p class="eyebrow">DISCOVER YOUR INNER ARTIST</p>
+                <h1>What does your soul <em>sound like?</em></h1>
+                <p>
+                    Every emotion has a color, every color tells a story,
+                    and every melody can become a masterpiece.
+                    Choose a mood and discover the art and music that match it.
+                </p>
+            </div>
+        </section>
+
+        <section class="section mood-section">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR EMOTIONAL CANVAS</p>
+                <h2>Choose your mood</h2>
+                <p>There is no wrong answer. Let your feelings guide you.</p>
+            </div>
+
+            <div class="mood-grid">
+                <button class="mood-card" type="button" data-mood="joy">
+                    <span class="mood-icon" aria-hidden="true">☀</span>
+                    <span class="mood-name">Joy</span>
+                    <span class="mood-description">Bright, warm, and full of life</span>
+                </button>
+
+                <button class="mood-card" type="button" data-mood="calm">
+                    <span class="mood-icon" aria-hidden="true">☾</span>
+                    <span class="mood-name">Calm</span>
+                    <span class="mood-description">Quiet, peaceful, and gentle</span>
+                </button>
+
+                <button class="mood-card" type="button" data-mood="melancholy">
+                    <span class="mood-icon" aria-hidden="true">☁</span>
+                    <span class="mood-name">Melancholy</span>
+                    <span class="mood-description">Deep, reflective, and emotional</span>
+                </button>
+
+                <button class="mood-card" type="button" data-mood="energy">
+                    <span class="mood-icon" aria-hidden="true">✦</span>
+                    <span class="mood-name">Energy</span>
+                    <span class="mood-description">Bold, powerful, and expressive</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="section discovery-section" id="discovery" aria-live="polite">
+            <div class="section-heading">
+                <p class="eyebrow">YOUR PERSONAL MASTERPIECE</p>
+                <h2 id="result-title">Your mood, translated into art</h2>
+                <p id="result-description">
+                    Select a mood above to reveal its colors, painting inspiration,
+                    and musical companion.
+                </p>
+            </div>
+
+            <div class="discovery-grid">
+                <article class="discovery-card">
+                    <div class="discovery-card-content">
+                        <span class="card-label">01 / COLOR PALETTE</span>
+                        <h3>The colors of you</h3>
+                        <div id="result-colors" class="color-palette">
+                            <span class="color-placeholder">Choose a mood to see your colors.</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="discovery-card">
+                    <div class="discovery-card-content">
+                        <span class="card-label">02 / VISUAL INSPIRATION</span>
+                        <h3>Your painting</h3>
+                        <p id="result-art">
+                            A painting can express what words sometimes cannot.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="discovery-card">
+                    <div class="discovery-card-content">
+                        <span class="card-label">03 / MUSICAL COMPANION</span>
+                        <h3>Your soundtrack</h3>
+                        <p id="result-music">
+                            Discover a musical piece that reflects your mood.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="reflection-section">
+            <div class="reflection-intro">
+                <p class="eyebrow">LEAVE YOUR MARK</p>
+                <h2>Every feeling tells a story.</h2>
+                <p>
+                    Art becomes more meaningful when we connect it to our own lives.
+                    Share a reflection about the colors, paintings, or music that
+                    speak to you.
+                </p>
+            </div>
+
+            <form id="reflection-form" class="reflection-form">
+                <div class="form-group">
+                    <label for="visitor-name">Your name</label>
+                    <input
+                        type="text"
+                        id="visitor-name"
+                        name="visitor-name"
+                        placeholder="What should we call you?"
+                        maxlength="50"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="reflection-mood">What are you feeling?</label>
+                    <select id="reflection-mood" name="reflection-mood" required>
+                        <option value="">Choose your mood</option>
+                        <option value="Joy">Joy</option>
+                        <option value="Calm">Calm</option>
+                        <option value="Melancholy">Melancholy</option>
+                        <option value="Energy">Energy</option>
+                        <option value="Other">Something else</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reflection-text">Your reflection</label>
+                    <textarea
+                        id="reflection-text"
+                        name="reflection-text"
+                        rows="5"
+                        maxlength="500"
+                        placeholder="If your feelings were a painting or a song, what would they look like or sound like?"
+                        required
+                    ></textarea>
+                </div>
+
+                <button class="button button-primary" type="submit">
+                    Save my reflection
+                </button>
+
+                <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <section class="section saved-section">
+            <div class="section-heading">
+                <p class="eyebrow">A GALLERY OF FEELINGS</p>
+                <h2>Your reflections</h2>
+                <p>Your saved reflections stay in this browser using local storage.</p>
+            </div>
+
+            <div id="saved-reflections" class="saved-reflections">
+                <p class="empty-message">Your gallery is waiting for its first story.</p>
+            </div>
+
+            <button id="clear-reflections" class="button button-secondary" type="button">
+                Clear saved reflections
+            </button>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="footer-logo" href="siteplan.html">ART IN MOTION</a>
+            <p>Where colors become feelings and music becomes visual.</p>
+            <p>&copy; <span id="current-year"></span> Madelin Hernández</p>
+            <p class="last-modified">Last modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
